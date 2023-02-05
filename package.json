@@ -9,11 +9,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "sass": "^1.57.1",
     "vite": "^4.0.0"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
     "vite-plugin-handlebars": "^1.6.0"
-  }
+  },
+  "predeploy": "npm run build",
+  "deploy": "npm run dev"
 }
